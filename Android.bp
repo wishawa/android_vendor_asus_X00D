@@ -110,3 +110,31 @@ dex_import {
 	jars: ["proprietary/framework/WfdCommon.jar"],
 }
 
+android_app_import {
+	name: "com.qualcomm.location",
+	owner: "qti",
+	apk: "proprietary/priv-app/com.qualcomm.location/com.qualcomm.location.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+dex_import {
+	name: "com.qti.location.sdk",
+	owner: "qti",
+	jars: ["proprietary/framework/com.qti.location.sdk.jar"],
+}
+
+dex_import {
+	name: "izat.xt.srv",
+	owner: "qti",
+	jars: ["proprietary/framework/izat.xt.srv.jar"],
+}
+
+dex_import {
+	name: "com.qti.snapdragon.sdk.display",
+	owner: "qti",
+	jars: ["proprietary/framework/com.qti.snapdragon.sdk.display.jar"],
+}
